@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  max-width: $app-width;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: $b-page;
+  color: $t-page;
+}
+
+.link-unstyling {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-unstyling {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

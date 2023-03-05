@@ -1,0 +1,53 @@
+@import "7_shared/UI/variables";
+
+.header {
+  // position: fixed;
+  max-width: $app-width;
+  // height: $header-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 12px $padding-outer-sides 12px $padding-outer-sides;
+  background-color: $b-header;
+  color: $t-header;
+}
+
+.header__logo {
+  font-size: 30px;
+}
+
+// header__menu
+
+.header__menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__menu-item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header__menu-link {
+  line-height: 1.2;
+
+  &:hover {
+    text-shadow: 0 0 10px $t-header-hl;
+  }
+
+  &_active {
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:hover {
+      text-shadow: none;
+    }
+  
+  }
+}

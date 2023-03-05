@@ -1,7 +1,14 @@
 import "./index.scss";
 import { withProviders } from "./providers";
-import { Routing } from "pages";
+import { Routing } from "3_pages";
+import Header from "4_widgets/Header";
 
-const App = () => <Routing />;
+function App() {
+  return (
+    <div className="app">
+      <Header />
+    </div>
+  );
+}
 
 export default withProviders(App);
