@@ -1,1 +1,2 @@
-import type { ITask } from "./types"
+export type { ITask } from "./types";
+export { TaskType, TaskStatus } from "./types";
