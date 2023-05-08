@@ -23,3 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 _*
+
+src/7_shared/model/tests/**/*.js
+src/6_entities/task/types/index.js
+src/6_entities/task/index.js

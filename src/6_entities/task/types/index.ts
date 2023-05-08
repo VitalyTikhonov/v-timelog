@@ -3,7 +3,8 @@ export interface ITask {
   name: string;
   type: TaskType;
   parentId?: string;
-  subtasks?: string[]; // for STAGED
+  subtaskIds?: string[]; // for STAGED
+  subtasks?: ITask[]; // for STAGED
 
   capacity?: number; // hours
   priority: string;
